@@ -8,7 +8,7 @@ openai.api_key = os.environ['OPENAI_API_KEY']
 # Check if the API key is missing
 if openai.api_key == "":
     sys.stderr.write("""
-    ❌ You haven't set up your API key yet.
+    You haven't set up your API key yet.
 
     Steps to set it up:
     1. Go to https://platform.openai.com/signup
