@@ -26,9 +26,12 @@ response = openai.chat.completions.create(     #Chat Completion API by OpenAI
         {"role": "system", "content": "You are a helpful assistant."},  # Sets the AI's personality
         #{"role": "user", "content": "Who won the world series in 2020?"},  # First user message (optional)
         #{"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},  # AI response (optional)
-        {"role": "user", "content": "Make a song about chihiro"}  # Second user message
+        {"role": "user", "content": "Make a song about chihiro from spirited away"}  # Second user message
     ]
 )
 
-# Print the full AI response (can be adjusted to just print content)
+output = response['choices'][0]['message']['content']  #printing just the output
+print(output)
+
+# Print the full AI response by prinintg 'response'
 print(response)
