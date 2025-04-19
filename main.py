@@ -20,12 +20,12 @@ if openai.api_key == "":
 
 # Array of messages simulates a chat between user and AI
 # This can be converted into a UI later with real-time input/output
-response = openai.chat.completions.create(
+response = openai.chat.completions.create(     #Chat Completion API by OpenAI
     model="gpt-3.5-turbo",  # Using GPT-3.5 Turbo model
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},  # Sets the AI's personality
-        {"role": "user", "content": "Who won the world series in 2020?"},  # First user message
-        {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},  # AI response
+        #{"role": "user", "content": "Who won the world series in 2020?"},  # First user message (optional)
+        #{"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},  # AI response (optional)
         {"role": "user", "content": "Make a song about chihiro"}  # Second user message
     ]
 )
