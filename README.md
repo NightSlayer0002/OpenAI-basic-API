@@ -20,10 +20,10 @@ It shows how to make a basic multi-turn conversation with an AI model — like a
 ## Why This Project?
 
 This example lays the **foundation** for more advanced ideas:
-- 🔄 Convert into a full chatbot with real-time chat.
-- 🖥️ Add a user interface (using django, Flask, or React).
-- 🤖 Connect it with messaging apps like Telegram or Discord.
-- 🎨 Change the prompts to turn it into an idea generator, creative writer, or assistant.
+-> Convert into a full chatbot with real-time chat.
+-> Add a user interface (using django, Flask, or React).
+-> Connect it with messaging apps like Telegram or Discord.
+-> Change the prompts to turn it into an idea generator, creative writer, or assistant.
 
 ---
 
@@ -32,5 +32,13 @@ This example lays the **foundation** for more advanced ideas:
 1. Make sure you have Python installed.
 
 2. Install the required package (`boltiotai`):
-   ```
+   ```bash
    pip install boltiotai
+   
+3. Set your OpenAI API key as an environment variable: (Replit: Tools->Secrets->New Secret)
+   ```bash
+   export OPENAI_API_KEY=your_secret_key_here
+
+4. Run the script:
+   ```bash
+   python main.py   
