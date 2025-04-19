@@ -2,6 +2,7 @@
 
 # Basic OpenAI API Use (Python)
 
+📢 **Note:** This project was developed using API access provided via [Bolt IoT](https://boltiot.com).
 This is a simple example of using OpenAI's Chat Completion API (`gpt-3.5-turbo model`) with Python.  
 It shows how to make a basic multi-turn conversation with an AI model — like asking a question and getting a creative response (e.g., generating a song!).
 
